@@ -1,0 +1,16 @@
+PODS:
+  - LDZFModuleKit (0.1.0)
+
+DEPENDENCIES:
+  - LDZFModuleKit (from `../`)
+
+EXTERNAL SOURCES:
+  LDZFModuleKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LDZFModuleKit: df12559ec3eb7cc96246032ade9e60c903378d0d
+
+PODFILE CHECKSUM: f29f2f354469bb81b3031045e3762598a18d0dc1
+
+COCOAPODS: 1.11.2
