@@ -1,5 +1,5 @@
 PODS:
-  - LDZFModuleKit (0.1.0)
+  - LDZFModuleKit (0.1.1)
 
 DEPENDENCIES:
   - LDZFModuleKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LDZFModuleKit: df12559ec3eb7cc96246032ade9e60c903378d0d
+  LDZFModuleKit: 1c25c529847157827c308a26ff20c22bebe7bb46
 
 PODFILE CHECKSUM: f29f2f354469bb81b3031045e3762598a18d0dc1
 
