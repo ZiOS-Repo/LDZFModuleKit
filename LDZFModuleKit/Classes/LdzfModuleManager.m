@@ -1,20 +1,20 @@
 //
-//  LDZFModuleManager.m
+//  LdzfModuleManager.m
 //  Pods
 //
 //  Created by zhuyuhui on 2021/11/11.
 //
 
-#import "LDZFModuleManager.h"
+#import "LdzfModuleManager.h"
 
-@interface LDZFModuleManager()
+@interface LdzfModuleManager()
 @property(nonatomic, strong) NSMutableArray *appEventModules;
 @end
 
-@implementation LDZFModuleManager
+@implementation LdzfModuleManager
 + (instancetype)sharedInstance {
     static dispatch_once_t onceToken;
-    static LDZFModuleManager *instance = nil;
+    static LdzfModuleManager *instance = nil;
     dispatch_once(&onceToken, ^{
         instance = [[super allocWithZone:NULL] init];
     });

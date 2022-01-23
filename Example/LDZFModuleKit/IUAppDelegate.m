@@ -11,7 +11,7 @@
 @implementation IUAppDelegate
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey,id> *)launchOptions {
-    [[LDZFModuleManager sharedInstance] loadModulesWithPlistFileName:@"modulesList"];
+    [[LdzfModuleManager sharedInstance] loadModulesWithPlistFileName:@"modulesList"];
     return YES;
 }
 
@@ -19,33 +19,33 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    [[LDZFModuleManager sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+    [[LdzfModuleManager sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-    [[LDZFModuleManager sharedInstance] applicationWillResignActive:application];
+    [[LdzfModuleManager sharedInstance] applicationWillResignActive:application];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    [[LDZFModuleManager sharedInstance] applicationDidEnterBackground:application];
+    [[LdzfModuleManager sharedInstance] applicationDidEnterBackground:application];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-    [[LDZFModuleManager sharedInstance] applicationWillEnterForeground:application];
+    [[LdzfModuleManager sharedInstance] applicationWillEnterForeground:application];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    [[LDZFModuleManager sharedInstance] applicationDidBecomeActive:application];
+    [[LdzfModuleManager sharedInstance] applicationDidBecomeActive:application];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-    [[LDZFModuleManager sharedInstance] applicationWillTerminate:application];
+    [[LdzfModuleManager sharedInstance] applicationWillTerminate:application];
 }
 
 //说明：UNIVERSIAL LINK 唤醒 app
 - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler API_AVAILABLE(ios(8.0)){
-    BOOL isRespond = [[LDZFModuleManager sharedInstance] application:application continueUserActivity:userActivity restorationHandler:restorationHandler];
+    BOOL isRespond = [[LdzfModuleManager sharedInstance] application:application continueUserActivity:userActivity restorationHandler:restorationHandler];
     if (isRespond) {
         return YES;
     }
@@ -56,7 +56,7 @@
     if (!url) {
         return NO;
     }
-    BOOL isRespond = [[LDZFModuleManager sharedInstance] application:app openURL:url options:options];
+    BOOL isRespond = [[LdzfModuleManager sharedInstance] application:app openURL:url options:options];
     if (isRespond) {
         return YES;
     }

@@ -1,5 +1,5 @@
 //
-//  LDZFModuleManager.h
+//  LdzfModuleManager.h
 //  Pods
 //
 //  Created by zhuyuhui on 2021/11/11.
@@ -37,7 +37,7 @@ typedef void(^LDZFModuleUnregisterCompletionHandler)(id<LDZFModule> _Nonnull mod
 
 @end
 
-@interface LDZFModuleManager : NSObject<UIApplicationDelegate>
+@interface LdzfModuleManager : NSObject<UIApplicationDelegate>
 
 + (nonnull instancetype)sharedInstance;
 

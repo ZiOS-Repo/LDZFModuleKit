@@ -11,7 +11,7 @@
 #endif
 
 #import "LDZFModuleKit.h"
-#import "LDZFModuleManager.h"
+#import "LdzfModuleManager.h"
 
 FOUNDATION_EXPORT double LDZFModuleKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char LDZFModuleKitVersionString[];

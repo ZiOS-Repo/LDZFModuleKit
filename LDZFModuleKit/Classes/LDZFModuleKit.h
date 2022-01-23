@@ -8,6 +8,6 @@
 #ifndef LDZFModuleKit_h
 #define LDZFModuleKit_h
 
-#import "LDZFModuleManager.h"
+#import "LdzfModuleManager.h"
 
 #endif /* LDZFModuleKit_h */
